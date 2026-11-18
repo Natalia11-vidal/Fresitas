@@ -1,0 +1,36 @@
+
+import { Component, OnInit } from '@angular/core';
+import { Table } from '../../tabla/tabla';
+import { InventarioService } from '../../service/inventario';
+
+@Component({
+  selector: 'app-inventario',
+  standalone: true,
+  imports: [Table],
+  templateUrl: './inventario.html',
+  styleUrl: './inventario.css'
+})
+export class Inventario implements OnInit {
+
+  columnas = [
+    'id',
+    'producto',
+    'cantidad',
+    'precio'
+  ];
+
+  inventario: any[] = [];
+
+  constructor(private inventarioService: InventarioService) {}
+
+  ngOnInit(): void {
+    this.inventarioService.getInventario().subscribe({
+      next: (datos) => {
+        this.inventario = datos;
+      },
+      error: (error) => {
+        console.error('Error al obtener el inventario:', error);
+      }
+    });
+  }
+}

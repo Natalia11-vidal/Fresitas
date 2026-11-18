@@ -1,0 +1,24 @@
+
+# Backend
+Backend/node_modules/
+Backend/dist/
+Backend/.env
+Backend/.env.*
+
+# Frontend Angular
+Fresitas/node_modules/
+Fresitas/dist/
+Fresitas/.angular/
+Fresitas/coverage/
+Fresitas/.env
+Fresitas/.env.*
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+# Backend creado por error dentro del frontend
+Fresitas/Backend/
