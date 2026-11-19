@@ -14,7 +14,7 @@ export class ClientesService {
 
  
 
-  private readonly url = 'http://localhost:3000/api/v1/clientes';
+  private readonly url = 'https://fresitas-production.up.railway.app';
   constructor(private http: HttpClient) {}
 
   // Obtener todos los clientes

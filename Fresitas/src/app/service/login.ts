@@ -18,7 +18,7 @@ export interface RespuestaLogin {
 })
 export class LoginService {
 
-  private url = 'http://localhost:3000/api/v1/login';
+  private url = 'https://fresitas-production.up.railway.app';
 
   constructor(private http: HttpClient) {}
 
