@@ -16,5 +16,12 @@
     "resolveJsonModule": true
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist"]
+  "exclude": [
+  "node_modules",
+  "dist",
+  "src/config/clientes.config.ts",
+  "src/config/inventarios.config.ts",
+  "src/config/proveedores.config.ts",
+  "src/config/ventas.config.ts"
+]
 }
