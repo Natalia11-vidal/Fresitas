@@ -26,8 +26,9 @@ export class Inventario implements OnInit {
   ngOnInit(): void {
     this.inventarioService.getInventario().subscribe({
       next: (datos) => {
-        this.inventario = datos;
-      },
+  console.log('DATOS RECIBIDOS EN ANGULAR:', datos);
+  this.inventario = datos;
+},
       error: (error) => {
         console.error('Error al obtener el inventario:', error);
       }
