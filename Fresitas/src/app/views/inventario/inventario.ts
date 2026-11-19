@@ -1,12 +1,13 @@
 
 import { Component, OnInit } from '@angular/core';
+import { JsonPipe } from '@angular/common';
 import { Table } from '../../tabla/tabla';
 import { InventarioService } from '../../service/inventario';
 
 @Component({
   selector: 'app-inventario',
   standalone: true,
-  imports: [Table],
+  imports: [Table, JsonPipe],
   templateUrl: './inventario.html',
   styleUrl: './inventario.css'
 })
