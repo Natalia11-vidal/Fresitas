@@ -18,8 +18,8 @@ export interface RespuestaLogin {
 })
 export class LoginService {
 
-  private url = 'https://fresitas-production.up.railway.app';
-
+  private url = 'https://fresitas-production.up.railway.app/api/v1/login';
+  
   constructor(private http: HttpClient) {}
 
   login(credenciales: Credenciales): Observable<RespuestaLogin> {
