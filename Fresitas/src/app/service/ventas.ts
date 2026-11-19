@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class VentasService {
 
-  private readonly url = 'https://fresitas-production.up.railway.app';
+  private readonly url = 'https://fresitas-production.up.railway.app/api/v1/ventas';
 
   constructor(private http: HttpClient) {}
 
